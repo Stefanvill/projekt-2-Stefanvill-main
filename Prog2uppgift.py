@@ -3,7 +3,7 @@ import os
 import time
 import json
 
-def append_to_json_file(data): #funktion som appendar data till json filen
+def append_to_json_file(data): #funktion som appendar data till json filen 
     try: #en try för att försöka öppna filen och om det ej går eller att den ej existerar så skapas en ny fil
         with open("data.json", "r") as file: #öppnar filen med "r" = read [OBS] kommer ej ihåg om detta var det korrekta sättet
             existing_data = json.load(file)
